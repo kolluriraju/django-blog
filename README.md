@@ -1,0 +1,2 @@
+# django-blog
+ yoga app
