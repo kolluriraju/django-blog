@@ -1,0 +1,12 @@
+{%extends 'blog/base.html'%}
+{% block title_block %}RAJA YOGA HOME PAGE {% endblock%}
+  {% block content %}
+    <h1>RAJA YOGA BLOG</h1>
+    {%for post in post_list%}
+    <a href="{% url 'posting' post.id %}"><h2>{{post.title}}</h2></a>
+      <p id='date'> Published on {{post.publish}} by {{post.author|title}}</p>
+        {{post.body|truncatewords:30|linebreaks}}
+{#      <img class="img-fluid rounded" src="{{post.image}}" alt="">#}
+    {%endfor %}
+      {% include 'blog/pagination.html' with page=post_list %}
+  {% endblock%}

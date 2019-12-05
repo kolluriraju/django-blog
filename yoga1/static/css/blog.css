@@ -1,0 +1,29 @@
+.content{
+  width:60%;
+  float:left;;
+  padding: 0 0 0 30px;
+  background: lightblue;
+  height:100%;
+}
+.sidebar{
+  width: 40%;
+  float: right;
+  padding: 10px;
+  background: skyblue;
+  height: 100%;
+}
+h1{
+  text-align: center;
+  border-bottom: 1px solid red;
+  padding-bottom: 10px;
+}
+ body{
+   color: inherit;
+   background: lightblue;
+ }
+#date{
+  color: darkorange;
+  font-size: 12px;
+  font-style: italic;
+
+}
